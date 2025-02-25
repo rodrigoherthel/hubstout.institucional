@@ -89,8 +89,11 @@ function App() {
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2">
-              <Trophy size={24} className="text-[#B2F828]" />
-              <span className="font-bold">Hubstout</span>
+            <img 
+            src=" https://raw.githubusercontent.com/rodrigoherthel/hubstout.institucional/refs/heads/main/public/logo_w.png"
+            alt="hubstout"
+            width="100"
+          />
             </div>
             <div className="flex gap-6 text-[#C9C9C9]">
               <a href="https://privacy.hubstout.com" className="hover:text-[#B2F828]">Privacy Policy</a>
