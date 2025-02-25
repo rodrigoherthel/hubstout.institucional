@@ -19,13 +19,22 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
+      - name: Setup node
+          run: npm install
+          uses: actions/setup-node@v4
+          with:
+            node-version: '20'
+
+      - name: Install dependency
+          run: npm install
+
+      - name: Build
+         run: npm run build
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.110.0'
-
-      - name: Build
-        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
@@ -35,4 +44,4 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./dist
