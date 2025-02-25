@@ -94,7 +94,7 @@ function App() {
             </div>
           </div>
           <div className="text-center mt-8 text-[#C9C9C9]">
-            <p>&copy; 2024 Hubstout. {t.footer.rights}</p>
+            <p>&copy; 2025 Hubstout. {t.footer.rights}</p>
           </div>
         </div>
       </footer>
