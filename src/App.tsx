@@ -57,7 +57,7 @@ function App() {
         </p>
         <div className="relative w-full max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden">
           <img 
-            src="https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&q=80"
+            src="https://t3.ftcdn.net/jpg/05/13/76/12/360_F_513761212_i3z6vHUNV0bQ8pjkBGO3yrpLg8zs4mFK.jpg"
             alt="Athletes training"
             className="object-cover w-full h-full"
           />
