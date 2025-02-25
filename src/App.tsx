@@ -13,8 +13,12 @@ function App() {
       <header className="container mx-auto px-4 py-6">
         <nav className="flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <Trophy size={32} className="text-[#B2F828]" />
-            <span className="text-2xl font-bold">Hubstout</span>
+
+          <img 
+            src=" https://raw.githubusercontent.com/rodrigoherthel/hubstout.institucional/refs/heads/main/public/logo_w.png"
+            alt="hubstout"
+            width="200"
+          />
           </div>
           <div className="flex items-center gap-6">
             <div className="flex gap-2">
