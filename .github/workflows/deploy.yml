@@ -35,6 +35,9 @@ jobs:
         with:
           hugo-version: '0.110.0'
 
+      - name: Add CNAME file for custom domain
+        run: echo 'www.hubstout.com' > ./dist/CNAME
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/main'
